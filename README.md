@@ -1,4 +1,4 @@
-# 👋 Hey, I’m Dilip  
+# 👋 Hello, I’m Dilip
 
 ### 🧠 AI Explorer · Builder · Human-Centered Technologist  
 
