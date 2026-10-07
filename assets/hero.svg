@@ -1,0 +1,93 @@
+<svg width="1280" height="430" viewBox="0 0 1280 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="430" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#11110F"/>
+    <stop offset=".54" stop-color="#171411"/>
+    <stop offset="1" stop-color="#3D1B0D"/>
+  </linearGradient>
+  <radialGradient id="g1" cx="0" cy="0" r="1" gradientTransform="translate(1045 105) rotate(135) scale(410 300)">
+    <stop stop-color="#FF7A3D" stop-opacity=".28"/>
+    <stop offset="1" stop-color="#FF7A3D" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+  <style>
+    .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace }
+    .label { fill:#F9F4EC; font-size:13px; font-weight:700; letter-spacing:.07em }
+    .sub { fill:#9E9188; font-size:9px; letter-spacing:.09em }
+    .node { fill:#1D1916; stroke:#524239; stroke-width:1.2 }
+    .wire { stroke:#66483A; stroke-width:2; stroke-dasharray:8 10 }
+    @keyframes dash { to { stroke-dashoffset:-90 } }
+    @keyframes pulse { 0%,100% { opacity:.25; transform:scale(.85) } 50% { opacity:1; transform:scale(1.2) } }
+    @keyframes scan { 0%{transform:translateX(-220px);opacity:0} 8%{opacity:.8} 70%{opacity:.35} 100%{transform:translateX(1280px);opacity:0} }
+    @keyframes blink { 0%,88%,100%{opacity:.2} 94%{opacity:1} }
+    .flowline { animation:dash 4s linear infinite }
+    .pulse1 { transform-box:fill-box; transform-origin:center; animation:pulse 2.8s ease-in-out infinite }
+    .pulse2 { transform-box:fill-box; transform-origin:center; animation:pulse 2.8s ease-in-out .55s infinite }
+    .pulse3 { transform-box:fill-box; transform-origin:center; animation:pulse 2.8s ease-in-out 1.1s infinite }
+    .scanner { animation:scan 7s ease-in-out infinite }
+    .cursor { animation:blink 1.4s linear infinite }
+  </style>
+</defs>
+
+<rect width="1280" height="430" rx="30" fill="url(#bg)"/>
+<rect width="1280" height="430" rx="30" fill="url(#g1)"/>
+<rect x="1" y="1" width="1278" height="428" rx="29" stroke="#392D27"/>
+
+<g opacity=".13">
+  <path d="M0 80H1280M0 140H1280M0 200H1280M0 260H1280M0 320H1280M0 380H1280" stroke="#BBA79A"/>
+  <path d="M80 0V430M160 0V430M240 0V430M320 0V430M400 0V430M480 0V430M560 0V430M640 0V430M720 0V430M800 0V430M880 0V430M960 0V430M1040 0V430M1120 0V430M1200 0V430" stroke="#BBA79A"/>
+</g>
+
+<rect class="scanner" x="-160" y="0" width="120" height="430" fill="#FF8A56" opacity=".08" filter="url(#soft)"/>
+
+<circle cx="66" cy="62" r="6" fill="#78F08A"/>
+<circle cx="66" cy="62" r="14" fill="#78F08A" opacity=".09"/>
+<text x="88" y="67" class="mono" fill="#D5CCC5" font-size="11" letter-spacing=".09em">SYSTEM ONLINE / AVAILABLE DEC 2026</text>
+
+<text x="64" y="133" class="sans" fill="#FFF9F2" font-size="58" font-weight="800" letter-spacing="-2.8">Dilip N.</text>
+<text x="64" y="185" class="sans" fill="#FFF9F2" font-size="37" font-weight="760" letter-spacing="-1.6">I build AI systems that <tspan fill="#FF8147" font-style="italic">prove</tspan> they work.</text>
+<text x="66" y="218" class="mono" fill="#B9AAA0" font-size="12">post-training · retrieval · agents · evaluation · serving · MLOps<tspan class="cursor" fill="#FF8147">_</tspan></text>
+
+<line x1="108" y1="312" x2="1171" y2="312" class="wire flowline"/>
+
+<g>
+  <rect x="72" y="278" width="164" height="68" rx="15" class="node"/>
+  <circle cx="96" cy="312" r="5.5" fill="#FF8A56" class="pulse1"/>
+  <text x="113" y="307" class="mono label">POST-TRAIN</text>
+  <text x="113" y="326" class="mono sub">QLoRA · SFT · DPO</text>
+</g>
+<g>
+  <rect x="268" y="278" width="160" height="68" rx="15" class="node"/>
+  <circle cx="292" cy="312" r="5.5" fill="#FF8A56" class="pulse2"/>
+  <text x="309" y="307" class="mono label">RETRIEVE</text>
+  <text x="309" y="326" class="mono sub">BGE · BM25 · RRF</text>
+</g>
+<g>
+  <rect x="460" y="278" width="148" height="68" rx="15" class="node"/>
+  <circle cx="484" cy="312" r="5.5" fill="#FF8A56" class="pulse3"/>
+  <text x="501" y="307" class="mono label">AGENTS</text>
+  <text x="501" y="326" class="mono sub">LANGGRAPH · MCP</text>
+</g>
+<g>
+  <rect x="640" y="278" width="158" height="68" rx="15" class="node"/>
+  <circle cx="664" cy="312" r="5.5" fill="#FF8A56" class="pulse1"/>
+  <text x="681" y="307" class="mono label">EVALUATE</text>
+  <text x="681" y="326" class="mono sub">EVALS · BOOTSTRAP</text>
+</g>
+<g>
+  <rect x="830" y="278" width="148" height="68" rx="15" class="node"/>
+  <circle cx="854" cy="312" r="5.5" fill="#FF8A56" class="pulse2"/>
+  <text x="871" y="307" class="mono label">SERVE</text>
+  <text x="871" y="326" class="mono sub">vLLM · FASTAPI</text>
+</g>
+<g>
+  <rect x="1010" y="278" width="170" height="68" rx="15" class="node"/>
+  <circle cx="1034" cy="312" r="5.5" fill="#FF8A56" class="pulse3"/>
+  <text x="1051" y="307" class="mono label">OBSERVE</text>
+  <text x="1051" y="326" class="mono sub">OTEL · LANGFUSE</text>
+</g>
+
+<text x="66" y="397" class="mono" fill="#75685F" font-size="10" letter-spacing=".09em">BUILD → MEASURE → SHIP → VERIFY</text>
+<text x="1210" y="397" class="mono" fill="#75685F" font-size="10" text-anchor="end" letter-spacing=".09em">AI / ML / LLM ENGINEERING</text>
+</svg>

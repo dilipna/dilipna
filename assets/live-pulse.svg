@@ -1,0 +1,18 @@
+<svg width="1280" height="236" viewBox="0 0 1280 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="236" rx="22" fill="#161412"/>
+<rect x="1" y="1" width="1278" height="234" rx="21" stroke="#392F29"/>
+<circle cx="43" cy="39" r="5" fill="#77EF88"/>
+<text x="58" y="43" fill="#FF8A56" font-family="monospace" font-size="11" letter-spacing="2">ENGINEERING PULSE / LIVE</text>
+<text x="38" y="76" fill="#F7F0E9" font-family="Arial, sans-serif" font-size="25" font-weight="700">What changed recently</text>
+<text x="38" y="95" fill="#9F938A" font-family="monospace" font-size="10">Auto-generated from public GitHub activity after the first workflow run.</text>
+<g font-family="monospace" font-size="11">
+<rect x="38" y="118" width="286" height="82" rx="14" fill="#201C19" stroke="#493B33"/>
+<text x="54" y="143" fill="#F4ECE5">OPsVerse</text><text x="54" y="164" fill="#998B82">awaiting first refresh</text>
+<rect x="338" y="118" width="286" height="82" rx="14" fill="#201C19" stroke="#493B33"/>
+<text x="354" y="143" fill="#F4ECE5">axon-fde</text><text x="354" y="164" fill="#998B82">awaiting first refresh</text>
+<rect x="638" y="118" width="286" height="82" rx="14" fill="#201C19" stroke="#493B33"/>
+<text x="654" y="143" fill="#F4ECE5">Pro2ProAgent</text><text x="654" y="164" fill="#998B82">awaiting first refresh</text>
+<rect x="938" y="118" width="304" height="82" rx="14" fill="#201C19" stroke="#493B33"/>
+<text x="954" y="143" fill="#F4ECE5">wc26-mlops</text><text x="954" y="164" fill="#998B82">awaiting first refresh</text>
+</g>
+</svg>
