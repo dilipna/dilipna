@@ -26,6 +26,21 @@ I work across the part of AI that starts **after the demo**: model adaptation, r
 | **[Pro2Pro](https://github.com/dilipna/Pro2ProAgent)** · [demo](https://protopro.vercel.app/) | Checkpointed LangGraph + MCP orchestration with resumable state, human approval, guardrails, tracing, and model fallback | **78** evaluation tests |
 | **[FIFA2026MLOps](https://github.com/dilipna/wc26-mlops)** · [demo](https://fifa2026mlops.vercel.app/) | Elo + gradient boosting + Monte Carlo forecasting with automated training, validation, deployment, lineage, and drift monitoring | **Airflow · MLflow · Evidently · OpenTelemetry** |
 
+### `open source / measured`
+
+I look for numbers that are quietly wrong in LLM serving and energy tooling, reproduce them, and fix them in the open.
+
+| Project | What was wrong | Where it stands |
+|---|---|---|
+| **[AIBrix](https://github.com/vllm-project/aibrix)** routing | Least-latency scored pods by a lifetime average, so a pod that had slowed down kept winning traffic for about 10 minutes after 100,000 requests. A one-minute window cuts that to 15 seconds. | [Issue #3297](https://github.com/vllm-project/aibrix/issues/3297) · [PR #3327](https://github.com/vllm-project/aibrix/pull/3327): open, reviewed by the maintainer, follow-up pushed for his notes |
+| **AIBrix** metrics | An empty histogram was exported as a real percentile. | [PR #3290](https://github.com/vllm-project/aibrix/pull/3290): approved, checks green |
+| **AIBrix** batch | One `NaN` latency in a response leaves the adaptive concurrency controller at full load while the engine slows 50x. | [Issue #3339](https://github.com/vllm-project/aibrix/issues/3339): accepted by maintainers |
+| **[vLLM](https://github.com/vllm-project/vllm)** | Reproduced a streaming bug and validated another author's fix on a GPU: 18 of 640 requests broken before, 0 of 640 after. | [Validation on #62726](https://github.com/vllm-project/vllm/pull/62726#issuecomment-6304402477) |
+| **[CodeCarbon](https://github.com/mlco2/codecarbon)** | Country carbon intensities were 2 to 4 years old. A script now rebuilds them from the maintained dataset. | [PR #1468](https://github.com/mlco2/codecarbon/pull/1468): open |
+| **[GuideLLM](https://github.com/vllm-project/guidellm)** · **[Ray](https://github.com/ray-project/ray)** | Missing token timings counted as zero latency; a crash and lost prompts in Ray's vLLM batch stage. | [#1406](https://github.com/vllm-project/guidellm/pull/1406) · [#67460](https://github.com/ray-project/ray/pull/67460): open |
+
+**[llm-bench-wire-audit](https://github.com/dilipna/llm-bench-wire-audit)**: a logging proxy that checks what `vllm bench serve`, GuideLLM and AIPerf report against what actually crossed the wire. Where definitions match they agree with the wire within a few percent. Under an injected 300 ms stall, one tool's p99 inter-token latency reads 311 ms and another's reads 16.6 ms, because one averages per request and one does not.
+
 ### `research / active`
 
 <table>
