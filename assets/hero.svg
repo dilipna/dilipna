@@ -46,48 +46,48 @@
 <text x="88" y="67" class="mono" fill="#D5CCC5" font-size="11" letter-spacing=".09em">SYSTEM ONLINE / AVAILABLE DEC 2026</text>
 
 <text x="64" y="133" class="sans" fill="#FFF9F2" font-size="58" font-weight="800" letter-spacing="-2.8">Dilip N.</text>
-<text x="64" y="185" class="sans" fill="#FFF9F2" font-size="37" font-weight="760" letter-spacing="-1.6">I build AI systems that <tspan fill="#FF8147" font-style="italic">prove</tspan> they work.</text>
-<text x="66" y="218" class="mono" fill="#B9AAA0" font-size="12">post-training · retrieval · agents · evaluation · serving · MLOps<tspan class="cursor" fill="#FF8147">_</tspan></text>
+<text x="64" y="185" class="sans" fill="#FFF9F2" font-size="37" font-weight="760" letter-spacing="-1.6">I make LLM serving <tspan fill="#FF8147" font-style="italic">prove</tspan> its numbers.</text>
+<text x="66" y="218" class="mono" fill="#B9AAA0" font-size="12">inference · routing · scheduling · benchmarks · measurement · reliability<tspan class="cursor" fill="#FF8147">_</tspan></text>
 
 <line x1="108" y1="312" x2="1171" y2="312" class="wire flowline"/>
 
 <g>
   <rect x="72" y="278" width="164" height="68" rx="15" class="node"/>
   <circle cx="96" cy="312" r="5.5" fill="#FF8A56" class="pulse1"/>
-  <text x="113" y="307" class="mono label">POST-TRAIN</text>
-  <text x="113" y="326" class="mono sub">QLoRA · SFT · DPO</text>
+  <text x="113" y="307" class="mono label">ROUTE</text>
+  <text x="113" y="326" class="mono sub">AIBRIX · GO</text>
 </g>
 <g>
   <rect x="268" y="278" width="160" height="68" rx="15" class="node"/>
   <circle cx="292" cy="312" r="5.5" fill="#FF8A56" class="pulse2"/>
-  <text x="309" y="307" class="mono label">RETRIEVE</text>
-  <text x="309" y="326" class="mono sub">BGE · BM25 · RRF</text>
+  <text x="309" y="307" class="mono label">SCHEDULE</text>
+  <text x="309" y="326" class="mono sub">vLLM · DRAFTS</text>
 </g>
 <g>
   <rect x="460" y="278" width="148" height="68" rx="15" class="node"/>
   <circle cx="484" cy="312" r="5.5" fill="#FF8A56" class="pulse3"/>
-  <text x="501" y="307" class="mono label">AGENTS</text>
-  <text x="501" y="326" class="mono sub">LANGGRAPH · MCP</text>
+  <text x="501" y="307" class="mono label">CACHE</text>
+  <text x="501" y="326" class="mono sub">PREFIX · KV</text>
 </g>
 <g>
   <rect x="640" y="278" width="158" height="68" rx="15" class="node"/>
   <circle cx="664" cy="312" r="5.5" fill="#FF8A56" class="pulse1"/>
-  <text x="681" y="307" class="mono label">EVALUATE</text>
-  <text x="681" y="326" class="mono sub">EVALS · BOOTSTRAP</text>
+  <text x="681" y="307" class="mono label">BATCH</text>
+  <text x="681" y="326" class="mono sub">RAY DATA LLM</text>
 </g>
 <g>
   <rect x="830" y="278" width="148" height="68" rx="15" class="node"/>
   <circle cx="854" cy="312" r="5.5" fill="#FF8A56" class="pulse2"/>
-  <text x="871" y="307" class="mono label">SERVE</text>
-  <text x="871" y="326" class="mono sub">vLLM · FASTAPI</text>
+  <text x="871" y="307" class="mono label">MEASURE</text>
+  <text x="871" y="326" class="mono sub">TTFT · ITL · P99</text>
 </g>
 <g>
   <rect x="1010" y="278" width="170" height="68" rx="15" class="node"/>
   <circle cx="1034" cy="312" r="5.5" fill="#FF8A56" class="pulse3"/>
-  <text x="1051" y="307" class="mono label">OBSERVE</text>
-  <text x="1051" y="326" class="mono sub">OTEL · LANGFUSE</text>
+  <text x="1051" y="307" class="mono label">VERIFY</text>
+  <text x="1051" y="326" class="mono sub">TESTS · REPRO</text>
 </g>
 
-<text x="66" y="397" class="mono" fill="#75685F" font-size="10" letter-spacing=".09em">BUILD → MEASURE → SHIP → VERIFY</text>
-<text x="1210" y="397" class="mono" fill="#75685F" font-size="10" text-anchor="end" letter-spacing=".09em">AI / ML / LLM ENGINEERING</text>
+<text x="66" y="397" class="mono" fill="#75685F" font-size="10" letter-spacing=".09em">REPRODUCE → MEASURE → FIX → VERIFY</text>
+<text x="1210" y="397" class="mono" fill="#75685F" font-size="10" text-anchor="end" letter-spacing=".09em">LLM INFERENCE / SERVING RELIABILITY</text>
 </svg>

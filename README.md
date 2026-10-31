@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Dilip N — AI systems that prove they work" />
+<img src="./assets/hero.svg" width="100%" alt="Dilip N.: I make LLM serving prove its numbers" />
 
 <br/>
 
