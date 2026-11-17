@@ -4,7 +4,7 @@
 
 <br/>
 
-### Dilip Nallamasa
+### Dilip N
 **LLM inference · Serving reliability · ML systems**
 
 I find the numbers LLM serving systems get quietly wrong (routing on stale latency, metrics that hide a stall, benchmarks that disagree about what "latency" means), prove it with a test or a measurement, and fix it upstream.
